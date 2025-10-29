@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: <your-dockerhub-username>/nodejs-app:latest
+          image: nodejs-app:latest  # Image local
           ports:
             - containerPort: 3000
 ---
@@ -31,4 +31,4 @@ spec:
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 30001  # Truy cập bên ngoài cluster
+      nodePort: 30001
